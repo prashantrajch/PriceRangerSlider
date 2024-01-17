@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Price Range</title>
+</head>
+<body>
+    <h1>Price Ranger Slider</h1>
+    <div class="inputField">
+        <div class="input">
+            <label for="minPrice">Minimum Price</label>
+            <input type="number" name="minPrice" id="minPrice" value="2500">
+        </div>
+        <div class="input">
+            <label for="maxPrice">Maximum Price</label>
+            <input type="number" name="maxPrice" id="maxPrice" value="8500">
+        </div>
+        <input type="range" name="range" id="range" min="2500" max="8500" step="1">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
