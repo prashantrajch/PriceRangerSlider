@@ -24,6 +24,7 @@ maxInput.addEventListener("input", (e) => {
 });
 
 function result(event) {
+    document.querySelector('h2').innerHTML = `Difference Between &#8377;${priceDiffer}`
   if (
     event.target.className == "minPrice" ||
     event.target.className == "maxPrice"
