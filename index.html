@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Price Range</title>
+    <title>Price Ranger</title>
 </head>
 <body>
-    <h1>Price Ranger Slider</h1>
-    <div class="inputField">
-        <div class="input">
-            <label for="minPrice">Minimum Price</label>
-            <input type="number" name="minPrice" id="minPrice" value="2500">
+    <div class="main">
+        <h1>Price Range Slider</h1>
+        <div class="inputContainer">
+            <div class="inputField">
+                <label for="minPrice">Minimum Price</label>
+                <input type="number" class="minPrice" id="minPrice" value="2500">
+            </div>
+            <div class="inputField">
+                <label for="maxPrice">Maximum Price</label>
+                <input type="number" class="maxPrice" id="maxPrice" value="8500">
+            </div>
         </div>
-        <div class="input">
-            <label for="maxPrice">Maximum Price</label>
-            <input type="number" name="maxPrice" id="maxPrice" value="8500">
+        <div class="sliderContainer">
         </div>
-        <input type="range" name="range" id="range" min="2500" max="8500" step="1">
+        <div class="rangeContainer">
+            <div class="priceSlider"></div>
+            <input type="range" min="0" max="10000" value="2500" step="1" class="minRange" id="minRange">
+            <input type="range" min="0" max="10000" value="8500" step="1" class="maxRange" id="maxRange">
+        </div>
     </div>
+
+
 
     <script src="index.js"></script>
 </body>
