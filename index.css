@@ -97,6 +97,9 @@ input[type='range']::-webkit-slider-thumb{
 }
 
 @media (max-width: 500px) {
+    body{
+        padding: 0 1rem;
+    }
     .main{
         width: 100%;
     }
